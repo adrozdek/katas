@@ -13,19 +13,12 @@
  * sumOdd(2) => 8
  */
 
-
-
 function sumOdd($n){
-    $sum = 0;
-    $sumLowerRows = 0;
-    for($x = 1; $x <= $n; $x++){
-        if($x % 2 != 0){
-            $x = $x + $n * 2;
-            //echo($x);
-            $sum += $x;
-        }
-    }
+    $sum = pow($n, 3);
+    //var_dump($sum);
+    return $sum;
 }
+
 
 
 /*

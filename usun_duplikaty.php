@@ -10,7 +10,7 @@
 
 function findDuplicates($table){
     //$removed = array_unique($table);   // usuwa duplikaty z tablicy. nie działa dla (3.4 itd) - pokazuje to samo ale nie świeci się na ok
-    
+
     $length = count($table);
     $withoutReplicates = array();
     $z = 0;
