@@ -52,7 +52,11 @@ echo("
 <html lang='pl'>
   <head>
     <meta charset='utf-8'>
+
     <title>Palindromy</title>
+
+
+
     <link href='./css/bootstrap.min.css' rel='stylesheet'>
 
   </head>
@@ -61,7 +65,11 @@ echo("
 
     <div class='container'>
       <div class='jumbotron'>
+
         <h1>Palindromy</h1>
+
+
+
         <p><a class='btn btn-lg btn-success' href='javascript:window.location.reload();' role='button'>Odśwież</a></p>
       </div>
 
