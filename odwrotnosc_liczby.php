@@ -10,10 +10,26 @@
 
 
 function revertNumber($number){
-    $numberAsString = str_split($number); //konwertuje string na array rozbijając wszystko na osobne elementy
+    //szybsza metoda:
+    /*$numberAsString = str_split($number); //konwertuje string na array rozbijając wszystko na osobne elementy
     $table = array_map('intval', $numberAsString);   //intval - konwertuje nam rodzaj ze string na integer każdego elementu tablicy
     //var_dump($table);
     $reverseTable = array_reverse($table); //odwrócenie tablicy. tworzy nową tablicę
+    */
+
+    $numberAsString = (string)($number);
+    //var_dump($numberAsString);
+    $length = strlen($numberAsString);
+    //$first = $numberAsString[1];
+    //var_dump($first);
+    $reverseTable = array();
+    $y = $length - 1;
+    for ($x = 0; $x < $length; $x++) {
+        $reverseTable[$y] = (integer)($numberAsString[$x]);
+        //var_dump($reverseTable[$y]);
+        $y--;
+    }
+    ksort($reverseTable);
     //var_dump($reverseTable);
     return $reverseTable;
 }

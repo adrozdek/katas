@@ -9,7 +9,6 @@
  */
 
 
-
 function findCapitals($text){
     //var_dump($text);
     $places = array();

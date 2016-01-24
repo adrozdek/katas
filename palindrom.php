@@ -20,8 +20,7 @@ function palinfrom($word){
         //dwie wersje. jedna sprowadza do małych liter obydwa stringi, druga nie zwraca uwagi na wielkość podczas porównywania
         //strtolower żeby sprowadzić je do małych liter żeby nie odrzucało ze względu na różnicę w wielkości:
 
-        //if((strtolower($oneSign[$x]) != (strtolower($oneSign[$length - 1])))){
-
+        //if((strtolower($oneSign[$x]) != (strtolower($oneSign[$length - 1])))){   //dwie wersje na if.
         if(strcasecmp($oneSign[$x], $oneSign[$length - 1]) != 0){
             //case-insensitive string comparison if(strcasecmp($va1, $var2) == 0)
             //Returns < 0 if str1 is less than str2; > 0 if str1 is greater than str2, and 0 if they are equal.
@@ -53,7 +52,7 @@ echo("
 <html lang='pl'>
   <head>
     <meta charset='utf-8'>
-    <title>Znajdz duplikaty</title>
+    <title>Palindromy</title>
     <link href='./css/bootstrap.min.css' rel='stylesheet'>
 
   </head>
@@ -62,7 +61,7 @@ echo("
 
     <div class='container'>
       <div class='jumbotron'>
-        <h1>Znajdz duplikaty</h1>
+        <h1>Palindromy</h1>
         <p><a class='btn btn-lg btn-success' href='javascript:window.location.reload();' role='button'>Odśwież</a></p>
       </div>
 

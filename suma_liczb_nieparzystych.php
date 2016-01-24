@@ -13,19 +13,12 @@
  * sumOdd(2) => 8
  */
 
-
-
 function sumOdd($n){
-    $sum = 0;
-    $sumLowerRows = 0;
-    for($x = 1; $x <= $n; $x++){
-        if($x % 2 != 0){
-            $x = $x + $n * 2;
-            //echo($x);
-            $sum += $x;
-        }
-    }
+    $sum = pow($n, 3);
+    //var_dump($sum);
+    return $sum;
 }
+
 
 
 /*
@@ -58,7 +51,7 @@ echo("
     <div class='container'>
       <div class='jumbotron'>
         <h1>Suma liczb nieparzystych</h1>
-        <p><a class='btn btn-lg btn-success' href='javascript:window.location.reload();' role='button'>Odświerz</a></p>
+        <p><a class='btn btn-lg btn-success' href='javascript:window.location.reload();' role='button'>Odśwież</a></p>
       </div>
 
       <div class='row'>
